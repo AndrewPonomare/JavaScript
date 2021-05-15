@@ -8,17 +8,19 @@
     <title>Apedia</title>
 </head>
 <body>
-    <header>
+       <header>
         <a href="url">
             <img src="img/logo.png" alt="logo" width="86" height="86">
             <span class="logo_name">Apedia</span>
         </a>
     </header>
     <main>
-        <div class="box_1">Hi<br> my name is Andrew<br> this is mine Apedia</div>
-        <form>
-            <p class="search"><input name="search" id="search-engine" type="search"></p>
+        <div class="box">Hi<br> my name is Andrew<br> this is mine Apedia</div>
+        <form id="searchForm">
+            <p class="searchBox"><input id="searchInput" type="text" autocomplete="off"></p>
         </form>
+        <div id="resultsList"></div>
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>

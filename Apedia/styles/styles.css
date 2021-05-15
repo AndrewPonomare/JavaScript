@@ -29,13 +29,13 @@ a {
 
 main {
     background-color: rgb(226, 222, 222);
-    position: fixed;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.box_1 {
+.box {
     font-size: 40px;
     text-transform: uppercase;
     text-align: center;
@@ -43,12 +43,12 @@ main {
     color: rgb(40, 61, 82);
 }
 
-#search-engine {
+#searchInput {
     -webkit-appearance: none;
     font-family: 'Itim', cursive;
-    width: 35px;
+    width: 30px;
     padding: 0 8px;
-    height: 35px;
+    height: 45px;
     font-size: 24px;
     color: #545151;
     line-height: 25px;
@@ -58,20 +58,21 @@ main {
     position: relative;
     z-index: 5;
     transition: .3s ease;
-  }
+}
   
-  #search-engine:focus {
+#searchInput:focus {
     outline: none;
     width: 195px;
-  }
+}
   
-  form {
+form {
       display: flex;
       justify-content: center;
+      align-items: center;
       padding-top: 50px;
-  }
+}
 
-  .search {
+.searchBox {
     z-index: 4;
     position: relative;
     padding: 4px;
@@ -82,13 +83,13 @@ main {
     background-image: -moz-linear-gradient(#dbf6ff,#b9ecfe);
     display: inline-block;
     box-shadow: inset 0 1px 0 rgba(239, 231, 231, 0.6), 0 2px 5px rgba(10, 68, 97, 0.4);
-  }
+}
   
-  .search:hover {
-    box-shadow: inset 0 1px 0 rgba(49, 247, 247, 0.67), 0 2px 3px 2px rgba(80, 180, 234, 0.52);
-  }
+.searchBox:hover {
+  box-shadow: inset 0 1px 0 rgba(49, 247, 247, 0.67), 0 2px 3px 2px rgba(80, 180, 234, 0.52);
+}
   
-  .search:after {
+.searchBox:after {
     content: '';
     display: block;
     position: absolute;
@@ -100,8 +101,27 @@ main {
     border-radius: 0 0 4px 4px;
     transform: rotate(-45deg);
     box-shadow: inset 0 -1px 0 rgba(249, 246, 246, 0.61), -2px 2px 2px rgba(9, 93, 136, 0.46);
-  }
+}
   
-  .search:hover:after {
+.searchBox:hover:after {
     box-shadow: inset 0 -1px 0 rgba(255,255,255,.6), -2px 2px 2px 1px rgba(100,200,255,.5);
-  }
+}
+
+
+.resultItem{
+  background: #f8f5f1;
+  border-radius:3px;
+  margin: 30px 10px 30px 10px;
+  padding:10px;
+  text-align: left;
+  font-style: italic;
+  height: auto;
+}
+
+.resultItem:hover{
+  border:5px solid #443328;
+}
+
+.resultSnippet {
+  font-size: 20px;
+}
