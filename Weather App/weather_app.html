@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather_App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section id="current-weather-details">
+     <div id="current-weather">
+        <h2 class="current">Get current weather in</h2>
+        <p id="current_city">...</p>
+        <button id="get-weather">Open</button>
+          <ul id="weather-list">
+            <li id="humidity">--</li>
+            <li id="pressure">--</li>
+            <li id="temperature">--</li>
+            <li id="wind-speed">--</li>
+        </ul>
+    </div>
+    <div id="city-weather">
+        <h2>Enter City Name</h2>
+        <button id="get_weather_city">Get weather in...</button>
+        <input type="text" id="city" list="cityname" placeholder="Enter City Name"/>
+        <datalist id="cityname">
+            <option value="Kyiv">
+            <option value="Lviv">
+            <option value="Kharkiv">
+        </datalist>
+        <ul id="weather-list">
+            <li id="city_humidity">--</li>
+            <li id="city_pressure">--</li>
+            <li id="city_temperature">--</li>
+            <li id="city_wind-speed">--</li>
+        </ul>
+    </div>
+</section>
+<script src="js/weather_app.js"></script>
+</body>
+</html>

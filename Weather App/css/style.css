@@ -1,0 +1,71 @@
+body {
+	background-image: url(../img/weather.jpg);
+	color: rgb(23, 46, 66);
+}
+
+#current-weather-details {
+	width: 70%;
+	padding-top: 20%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+@media screen and (max-width: 900px){
+    #current-weather-details{
+        display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+    }
+}
+
+#current_city{
+	font-weight: 900;
+	font-size: 25px;
+}
+
+#weather-list {
+	list-style: none;
+	margin-left: -40px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+#current-weather {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#city-weather {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#get_weather_city {
+	margin-bottom: 30px;
+}
+
+#city {
+	width: 200px;
+	padding: 10px;
+	background-color: rgb(218, 192, 159);
+	outline: none;
+}
+
+
+button {
+	border: none;
+	background-color: rgb(21, 39, 116);
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
