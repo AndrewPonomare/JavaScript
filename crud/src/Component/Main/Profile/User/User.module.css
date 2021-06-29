@@ -1,0 +1,38 @@
+.user {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin: 20px 20px 0px 20px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.item div {
+    padding-top: 20px;
+}
+
+.delete:active {
+    background-color: #EB0055;
+}
+
+.edit:active {
+    background-color: #624AF2;
+}
+
+button {
+    border: 1px solid #D6D8E7;
+    width: 100px;
+
+
+}
